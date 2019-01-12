@@ -10,22 +10,85 @@
 </head>
 <body>
 
-	<header>
-		<div class="wrapper">
-			<div class="logo">Felix Veras</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">Felix Veras - SD</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="about.html">About Me</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="portfolio.html">Portfolio</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Services
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="service.html">Web Development</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="service.html">Mobile Development</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">FrontEnd/BackEnd</a>
+			  </div>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="contact.html">Contacts</a>
+			</li>
+		  </ul>
 		</div>
-
-		<nav>
-			<a href="#">Inicio</a>
-			<a href="#">Servicios</a>
-			<a href="#">Portafolio</a>
-			<a href="#">Contactos</a>
-			<a href="#">Blog</a>
-		</nav>
-	</header>
+	  </nav>
 	
 	<div class="container">
-		<h1>Hola mundo</h1>
+		<div class="row mb-3">
+			<div class="col-12 col-md-12">
+				<div class="card bg-dark text-white">
+					<img src="./img/laptopprogramming.jpg" class="card-img" alt="...">
+					<div class="card-img-overlay">
+						<h5 class="card-title">Felix Veras - Software Development</h5>
+						<p class="card-text">This website is a portfolio and shows a little of what I can do with web and mobile technologies, responsive and adatable design. I am a student of computer science in the Dominican Republic and my desire is to make technology and systems that change the world or that can be a little better.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<h3 class="text-left">Services</h3>
+		<div class="row mb-3">
+			<div class="col-12 col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-tile mb-2">Web Development</h5>
+						<p class="card-text text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos soluta ducimus nam perspiciatis nobis amet doloremque nisi mollitia quia adipisci impedit eum illum alias blanditiis, nulla aspernatur? Dolores, iusto exercitationem!</p>
+						<!-- <a href="" class="card-link">Go</a> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-tile mb-2">Mobile App</h5>
+						<p class="card-text text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos soluta ducimus nam perspiciatis nobis amet doloremque nisi mollitia quia adipisci impedit eum illum alias blanditiis, nulla aspernatur? Dolores, iusto exercitationem!</p>
+						<!-- <a href="" class="card-link">Go</a> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-tile mb-2">Backend/Frontend</h5>
+						<p class="card-text text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos soluta ducimus nam perspiciatis nobis amet doloremque nisi mollitia quia adipisci impedit eum illum alias blanditiis, nulla aspernatur? Dolores, iusto exercitationem!</p>
+						<!-- <a href="" class="card-link">Go</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="js/jquery-3.3.1.min.js"></script>
