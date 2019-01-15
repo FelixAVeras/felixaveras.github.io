@@ -1,6 +1,9 @@
 div.container { margin-top: 4%; }
 
-a.btn-block { display: none; }
+/* a.btn-block { display: none; } */
+
+footer p a { color: #3498db; text-decoration: none !important;  }
+footer p a:hover { color: #9b59b6; }
 
 
 /* .programmingLevel { width: 40%; } */
