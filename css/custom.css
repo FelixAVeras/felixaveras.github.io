@@ -24,9 +24,12 @@ a:active { color: #9C27B0; }
 .social-icons-custom a:hover { background: linear-gradient(to bottom right, #9C27B0, #3F51B5) !important; }
 
 .dev-icons-custom {
-    font-size: 3rem;
-  }
-  
-  .dev-icons-custom .list-inline-item i:hover {
-    color: #9C27B0;
-  }
+  font-size: 3rem;
+}
+
+.dev-icons-custom .list-inline-item i:hover {
+  color: #9C27B0;
+}
+
+.container-fluid { background: #000; }
+
