@@ -1,21 +1,32 @@
-div.container { margin-top: 4%; }
+.custom-background { background: linear-gradient(to bottom right, #9C27B0, #3F51B5) !important; }
 
-/* a.btn-block { display: none; } */
+button, 
+a, 
+.custom-text-color { color: #3F51B5; }
 
-footer p a { color: #3498db; text-decoration: none !important;  }
-footer p a:hover { color: #9b59b6; }
+a:hover, 
+a:focus,
+a:active { color: #9C27B0; }
 
-
-/* .programmingLevel { width: 40%; } */
-.programmingLevel .progress { height: 22px; }
-.programmingLevel .list-group-item:nth-child(1) .progress .progress-bar { background: #563d7c; }
-.programmingLevel .list-group-item:nth-child(2) .progress .progress-bar { background: #cbb7d8; }
-.programmingLevel .list-group-item:nth-child(3) .progress .progress-bar { background: #f33a3a; }
-.programmingLevel .list-group-item:nth-child(4) .progress .progress-bar { background: #f3dc3a; }
-.programmingLevel .list-group-item:nth-child(5) .progress .progress-bar { background: #dc3545; }
-.programmingLevel .list-group-item:nth-child(6) .progress .progress-bar { background: #464443; }
-.programmingLevel .list-group-item:nth-child(7) .progress .progress-bar { background: #007bff; }
-
-@media (max-width: 475px) {
-    .card { margin-bottom: 12px; }
+.social-icons-custom a {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
 }
+
+.social-icons-custom a:hover { background: linear-gradient(to bottom right, #9C27B0, #3F51B5) !important; }
+
+.dev-icons-custom {
+    font-size: 3rem;
+  }
+  
+  .dev-icons-custom .list-inline-item i:hover {
+    color: #9C27B0;
+  }
