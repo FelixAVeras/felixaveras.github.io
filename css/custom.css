@@ -34,7 +34,8 @@ a:active { color: #9C27B0; }
 .container-fluid { background: #000; }
 
 .resume-content.OnlineCourses .subheading.mb-3:hover {
-  color: linear-gradient(to bottom right, #9C27B0, #3F51B5) !important;
+  color: #3F51B5 !important;
+  cursor: pointer;
 }
 
 .btn-custom {
@@ -46,6 +47,18 @@ a:active { color: #9C27B0; }
 .btn-custom:hover {
   background-position: right;
   color: #fff;
+}
+
+.btn-outline-custom-dark {}
+.btn-outline-custom-dark:hover {}
+.btn-outline-custom-light {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,.5);
+  outline: none;
+}
+.btn-outline-custom-light:hover {
+  border: 2px solid #fff;
+  outline: none;
 }
 
 .card-custom {
