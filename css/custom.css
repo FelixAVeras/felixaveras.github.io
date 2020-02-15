@@ -33,6 +33,10 @@ a:active { color: #9C27B0; }
 
 .container-fluid { background: #000; }
 
+.resume-content.OnlineCourses .subheading.mb-3:hover {
+  color: linear-gradient(to bottom right, #9C27B0, #3F51B5) !important;
+}
+
 .btn-custom {
   background: linear-gradient(to bottom right, #9C27B0, #3F51B5) !important;
   color: #fff;
@@ -49,3 +53,41 @@ a:active { color: #9C27B0; }
 }
 
 .card-custom h5 { color: #ccc;}
+
+.contact-section { padding: 80px 0; text-align: center; }
+.contact-section .inner-width { max-width: 100%; margin: auto; padding: 0 20px; }
+
+.contact-section .inner-width textarea { resize: none; }
+
+.contact-section .inner-width .input-custom {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #343a40;
+  color: #495057;
+  font-weight: 600;
+  padding: 10px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.contact-section .inner-width .input-custom:nth-child(1) {
+  float: left;
+  width: 28%;
+}
+.contact-section .inner-width .input-custom:nth-child(2) {
+  width: 28%;
+}
+.contact-section .inner-width .input-custom:nth-child(3) {
+  float: right;
+  width: 28%;
+}
+.contact-section .inner-width .input-custom:nth-child(4) {
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .contact-section .inner-width .input-custom:nth-child(1),
+  .contact-section .inner-width .input-custom:nth-child(2),
+  .contact-section .inner-width .input-custom:nth-child(3) { width: 100%; }
+}
