@@ -33,3 +33,19 @@ a:active { color: #9C27B0; }
 
 .container-fluid { background: #000; }
 
+.btn-custom {
+  background: linear-gradient(to bottom right, #9C27B0, #3F51B5) !important;
+  color: #fff;
+  transition: .5s;
+}
+
+.btn-custom:hover {
+  background-position: right;
+  color: #fff;
+}
+
+.card-custom {
+  background: #343a40;
+}
+
+.card-custom h5 { color: #ccc;}
