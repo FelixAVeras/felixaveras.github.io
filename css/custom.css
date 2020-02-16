@@ -8,7 +8,7 @@ a:hover,
 a:focus,
 a:active { color: #9C27B0; }
 
-.social-icons-custom a {
+/*.social-icons-custom a {
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
@@ -22,6 +22,47 @@ a:active { color: #9C27B0; }
 }
 
 .social-icons-custom a:hover { background: linear-gradient(to bottom right, #9C27B0, #3F51B5) !important; }
+*/
+
+.social-icons-custom a {
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 8px;
+}
+
+.social-icons-custom a:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #9C27B0, #3F51B5);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+.social-icons-custom a:hover::before { transform: scale(0); }
+.social-icons-custom a i { transition: 0.3s ease-in; }
+
+.social-icons-custom a:hover i  {
+    background: linear-gradient(45deg, #9C27B0, #3F51B5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    transform: scale(2.2);
+}
 
 .dev-icons-custom {
   font-size: 3rem;

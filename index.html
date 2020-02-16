@@ -53,7 +53,7 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mb-3">
           <a class="nav-link js-scroll-trigger" href="#contactme">Contact Me</a>
         </li>
         <li class="nav-item">
@@ -310,7 +310,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="card card-custom hover-shadow mb-2"">
+            <div class="card card-custom hover-shadow mb-2">
               <img src="" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Some title</h5>
@@ -321,7 +321,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="card card-custom hover-shadow mb-2"">
+            <div class="card card-custom hover-shadow mb-2">
               <img src="" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Some title</h5>
@@ -335,7 +335,7 @@
 
         <div class="row mt-2">
           <div class="col-12 col-md-4">
-            <div class="card card-custom hover-shadow mb-2"">
+            <div class="card card-custom hover-shadow mb-2">
               <img src="" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Some title</h5>
@@ -346,7 +346,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="card card-custom hover-shadow mb-2"">
+            <div class="card card-custom hover-shadow mb-2">
               <img src="" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Some title</h5>
@@ -357,7 +357,7 @@
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <div class="card card-custom hover-shadow mb-2"">
+            <div class="card card-custom hover-shadow mb-2">
               <img src="" alt="" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Some title</h5>
@@ -379,12 +379,12 @@
         
         <div class="contact-section">
           <div class="inner-width">
-            <form action="">
-              <input type="text" class="input-custom" placeholder="Your name here">
-              <input type="text" class="input-custom" placeholder="Your phone here">
-              <input type="text" class="input-custom" placeholder="Your email here">
-              <textarea name="" id="" cols="50" rows="5" class="input-custom" placeholder="Your comment here"></textarea>
-              <button class="btn btn-lg btn-custom mt-3"><i class="far fa-paper-plane"></i> Send Message</button>
+            <form method="POST" id="contactForm" onsubmit="return false;">
+              <input type="text" name="name" class="input-custom" placeholder="Your name here">
+              <input type="text" name="phone" class="input-custom" placeholder="Your phone here">
+              <input type="text" name="email" class="input-custom" placeholder="Your email here">
+              <textarea name="comment" id="" cols="50" rows="5" class="input-custom" placeholder="Your comment here"></textarea>
+              <button type="submit" name="btnSubmit" class="btn btn-lg btn-custom mt-3"><i class="far fa-paper-plane"></i> Send Message</button>
             </form>
           </div>
         </div>
@@ -404,7 +404,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
-
+  <script src="js/sendEmail.js"></script>
 </body>
 
 </html>
