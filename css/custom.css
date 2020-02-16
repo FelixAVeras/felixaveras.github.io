@@ -8,7 +8,7 @@ a:hover,
 a:focus,
 a:active { color: #9C27B0; }
 
-/*.social-icons-custom a {
+.social-icons-custom a {
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
@@ -22,9 +22,9 @@ a:active { color: #9C27B0; }
 }
 
 .social-icons-custom a:hover { background: linear-gradient(to bottom right, #9C27B0, #3F51B5) !important; }
-*/
 
-.social-icons-custom a {
+
+/*.social-icons-custom a {
     display: inline-flex;
     text-decoration: none;
     font-size: 18px;
@@ -63,6 +63,7 @@ a:active { color: #9C27B0; }
     -o-text-fill-color: transparent;
     transform: scale(2.2);
 }
+*/
 
 .dev-icons-custom {
   font-size: 3rem;
