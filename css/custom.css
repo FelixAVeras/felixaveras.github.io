@@ -105,9 +105,37 @@ a:active { color: #9C27B0; }
 
 .card-custom {
   background: #343a40;
+  position: relative;
+  display: flex;
 }
 
 .card-custom h5 { color: #ccc;}
+
+.card-custom:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+}
+
+.card-custom:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.card-custom:before,
+.card-custom:after {
+  background: lienar-gradient(235deg, #8e44ad, #2980b9, #00bcd4);
+}
 
 .contact-section { padding: 80px 0; text-align: center; }
 .contact-section .inner-width { max-width: 100%; margin: auto; padding: 0 20px; }
