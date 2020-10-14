@@ -1,3 +1,5 @@
+body { font-family: 'Raleway', sans-serif; !important; }
+
 .custom-background { background: linear-gradient(to bottom right, #9C27B0, #3F51B5) !important; }
 
 button, 
@@ -73,7 +75,7 @@ a:active { color: #9C27B0; }
   color: #9C27B0;
 }
 
-.container-fluid { background: #000; }
+/*.container-fluid { background: #000; }*/
 
 .resume-content.OnlineCourses .subheading.mb-3:hover {
   color: #3F51B5 !important;
