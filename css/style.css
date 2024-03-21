@@ -194,6 +194,14 @@ h3.display-4 { margin-bottom: 20px; }
     padding: 1em;
     z-index: 15;
   }
+
+  p.text-about { font-size: 23px; }
+  .section-link a { font-size: 22px; margin-right: 14px; }
+  .section-link a:hover { color: darkgray; }
+  .titleName { font-size: 35px; }
+  img { width: 400px; border-radius: 200px; }
+
+  .description { margin-top: 18%; }
   
   @media(min-width: 768px){
     .timeline {
