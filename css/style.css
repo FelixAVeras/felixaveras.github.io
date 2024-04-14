@@ -21,3 +21,7 @@ button.is-link i.bi-arrow-left {
 button.is-link:hover i.bi-arrow-left {
   margin-left: 15px;
 }
+
+@media screen and (max-width: 768px) {
+  .container { width: 90% !important; }
+}
