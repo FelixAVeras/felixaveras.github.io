@@ -1,5 +1,6 @@
 body { font-family: 'Raleway', sans-serif; }
 
+/* .custom-background { background: linear-gradient(to bottom right, #9C27B0, #3F51B5) !important; } */
 .custom-background { background: linear-gradient(to bottom right, #9C27B0, #3F51B5) !important; }
 
 button, 
@@ -75,7 +76,7 @@ a:active { color: #9C27B0; }
   color: #9C27B0;
 }
 
-.container-fluid { background: #000; }
+/* .container-fluid { background: #000; } */
 
 .resume-content.OnlineCourses .subheading.mb-3:hover {
   color: #3F51B5 !important;
@@ -106,12 +107,12 @@ a:active { color: #9C27B0; }
 }
 
 .card-custom {
-  background: #343a40;
+  /* background: #343a40; */
   position: relative;
   display: flex;
 }
 
-.card-custom h5 { color: #ccc;}
+/* .card-custom h5 { color: #ccc;} */
 
 .card-custom:before {
   content: '';
