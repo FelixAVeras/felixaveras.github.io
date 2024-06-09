@@ -1,1 +1,17 @@
-body { background-color: #f3f3f3; }
+body { background-image: linear-gradient(to right, #000 , #3333cc); }
+
+ul.list-group.list-group-flush li.list-group-item:hover {
+    color: #3333cc;
+    font-weight: 600;
+}
+
+div.card.text-bg-dark img.card-img {
+    opacity: 0.5;
+}
+
+.card-img-top {
+    width: 130px;
+    border: 1px solid;
+    border-radius: 17px;
+    background: white;
+}
