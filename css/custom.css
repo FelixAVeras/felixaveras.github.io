@@ -72,7 +72,7 @@ a:active { color: #9C27B0; }
   font-size: 3rem;
 }
 
-.dev-icons-custom .list-inline-item i:hover {
+.dev-icons-custom .list-inline-item i.fab:hover {
   color: #9C27B0;
 }
 
