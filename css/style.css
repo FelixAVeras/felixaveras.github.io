@@ -1,4 +1,8 @@
-body { background-image: linear-gradient(to right, #000 , #3333cc); }
+body { 
+    /* background-image: linear-gradient(to bottom right, #fff , #6b6bf1);  */
+    background-color: #f3f3f3;
+    padding-top: 35px;
+}
 
 ul.list-group.list-group-flush li.list-group-item:hover {
     color: #3333cc;
@@ -14,4 +18,10 @@ div.card.text-bg-dark img.card-img {
     border: 1px solid;
     border-radius: 17px;
     background: white;
+}
+
+img.home_image {
+    width: 200px;
+    height: auto;
+    border-radius: 100px !important;
 }
