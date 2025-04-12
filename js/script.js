@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.getJSON("projects.json", function(data) {
+    $.getJSON("./js/projects.json", function(data) {
         let proyectosContainer = $("#project-card");
         let filaActual;
 
