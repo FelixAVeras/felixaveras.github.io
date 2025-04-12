@@ -111,7 +111,7 @@
         {
             "title": "GoodWorkers",
             "description": "Find professional workers to resolve any need",
-            "image": "",
+            "image": ""
         }
       ]
     },
@@ -194,7 +194,7 @@
         {
             "title": "DORA",
             "description": "Planner and Project Management webapp",
-            "image": "",
+            "image": ""
         }
       ]
     },
@@ -212,7 +212,7 @@
                 { "name": ".NET" },
                 { "name": "SQL" },
                 { "name": "Azure" },
-                { "name": "Flutter" },
+                { "name": "Flutter" }
             ],
             "links": [
                 { "name": "Web", "url": "https://www.coopcmd.com/" }
