@@ -32,6 +32,14 @@ $(document).ready(function() {
         $.getJSON("https://felixaveras.github.io/js/projects.json", function(data) {
             let proyecto = data[index];
             let detalles = proyecto.details[0]; // Obtener el primer objeto de detalles
+
+            let coownerHtml = '';
+            
+            if (detalles.coowner && detalles.coowner.length > 0) {
+                let coownerLinks = detalles.coowner.map(coowner => `<a class="list-group-item list-group-item-action" href="${coowner.url}">${coowner.name}</a>`).join('');
+                coownerHtml = `<p>Co-owner with ${coownerLinks}</p>`;
+            }
+
             let modalHtml = `
                 <div class="modal fade" id="proyectoModal" tabindex="-1" aria-labelledby="proyectoModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
@@ -41,6 +49,7 @@ $(document).ready(function() {
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
+                                ${coownerHtml}
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <img src="${detalles.image}" class="img-fluid rounded" alt="${detalles.title}">
@@ -65,8 +74,8 @@ $(document).ready(function() {
             $('body').append(modalHtml);
             $('#proyectoModal').modal('show');
             $('#proyectoModal').on('hidden.bs.modal', function (e) {
-              $('#proyectoModal').remove();
-            })
+                $('#proyectoModal').remove();
+            });
         });
     });
 });
