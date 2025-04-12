@@ -13,11 +13,11 @@ $(document).ready(function() {
             let columna = $('<div class="col-12 col-md-4 mb-3"></div>');
             let cardHtml = `
                 <div class="card w-100 h-100">
-                    <img src="${proyecto.image}" class="card-img-top" alt="${proyecto.title}">
+                    <img src="${proyecto.image}" class="img-fluid rounded" alt="${proyecto.title}">
                     <div class="card-body">
                         <h5 class="card-title">${proyecto.title}</h5>
                         <p class="card-text">${proyecto.short_description}</p>
-                        <button class="btn btn-primary ver-detalle" data-index="${index}">Ver detalle</button>
+                        <button class="btn btn-primary ver-detalle" data-index="${index}">View Details</button>
                     </div>
                 </div>
             `;

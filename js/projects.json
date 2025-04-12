@@ -24,12 +24,12 @@
     {
       "title": "GoodMarket List",
       "short_description": "Mobile app for supermarket shopping and compare prices. Share lists.",
-      "image": "https://felixaveras.github.io/img/personalmoney.png",
+      "image": "https://felixaveras.github.io/img/goodmarket2.png",
       "details": [
         {
             "title": "GoodMarket List",
             "description": "Mobile app for supermarket shopping and compare prices, share lists, find lowest prices and much more..",
-            "image": "https://felixaveras.github.io/img/personalmoney.png",
+            "image": "https://felixaveras.github.io/img/goodmarket2.png",
             "tech": [
                 { "name": "Flutter" },
                 { "name": "SQLite" },
@@ -38,6 +38,45 @@
             ],
             "links": [
                 { "name": "Android", "url": "https://play.google.com/store/apps/details?id=com.felixdev.goodmarketlist" },
+                { "name": "Web", "url": "" }
+            ]
+        }
+      ]
+    },
+    {
+      "title": "Social Restaurant",
+      "short_description": "Mobile app for find the best places around you.",
+      "image": "https://felixaveras.github.io/img/socialrestaurant.png",
+      "details": [
+        {
+            "title": "Social Restaurant",
+            "description": "Mobile app for find the best places around you. You can find places, make friend and share your experience, all this in your hand.",
+            "image": "https://felixaveras.github.io/img/socialrestaurant.png",
+            "tech": [
+                { "name": "Flutter" },
+                { "name": "Supabase" }
+            ],
+            "links": [
+            ]
+        }
+      ]
+    },
+    {
+      "title": "InQ",
+      "short_description": "Web applications for appointment management and reservation.",
+      "image": "",
+      "details": [
+        {
+            "title": "InQ",
+            "description": "Web applications for appointment management and reservation. You can reserve an appointment with the professionals on this platform or you can have some customers and expand your business.",
+            "image": "",
+            "tech": [
+                { "name": "Angular" },
+                { "name": "Angular Material" },
+                { "name": "MongoDB" },
+                { "name": "ExpressJS" }
+            ],
+            "links": [
                 { "name": "Web", "url": "" }
             ]
         }
