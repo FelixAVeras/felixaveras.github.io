@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Personal Money",
+      "description": "Mobile app for personal expense tracker",
+      "image": "../img/personalmoney.png",
+      "details": [
+        {
+            "title": "Personal Money",
+            "description": "Mobile app for personal expense tracker. You can register all your incomes and expense and the app organize for you by date, and show you how much do you expend or gain, help with savings methods and much more..",
+            "image": "../img/personalmoney.png",
+            "tech": [
+                { "name": "Flutter" },
+                { "name": "SQLite" },
+                { "name": "Heroku" },
+                { "name": "Laravel" }
+            ],
+            "links": [
+                { "name": "Web", "url": "" },
+                { "name": "Android", "url": "" },
+                { "name": "iOS", "url": "" },
+                { "name": "Huawei", "url": "" }
+            ]
+        }
+      ]
+    }
+  ]
