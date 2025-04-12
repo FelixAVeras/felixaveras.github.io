@@ -26,18 +26,44 @@ $(document).ready(function() {
         });
     });
 
-    // Evento para el modal (lo agregaremos después)
     $(document).on('click', '.ver-detalle', function() {
         let index = $(this).data('index');
+        console.log("Índice del proyecto:", index); // Depuración
+
         $.getJSON("https://felixaveras.github.io/js/projects.json", function(data) {
             let proyecto = data[index];
-            let detalles = proyecto.details[0]; // Obtener el primer objeto de detalles
+            let detalles = proyecto.details[0];
+
+            console.log("Detalles del proyecto:", detalles); // Depuración
+
+            if (!detalles) {
+                console.error("No se encontraron detalles para este proyecto.");
+                return;
+            }
 
             let coownerHtml = '';
-            
-            if (detalles.coowner && detalles.coowner.length > 0) {
-                let coownerLinks = detalles.coowner.map(coowner => `<a class="list-group-item list-group-item-action" href="${coowner.url}">${coowner.name}</a>`).join('');
+
+            // Verificar si coowner existe en el objeto principal del proyecto
+            if (proyecto.coowner && Array.isArray(proyecto.coowner) && proyecto.coowner.length > 0) {
+                let coownerLinks = proyecto.coowner.map(coowner => `<a class="coownerLink" href="${coowner.url}">${coowner.name}</a>`).join('');
                 coownerHtml = `<p>Co-owner with ${coownerLinks}</p>`;
+                console.log("Co-owners encontrados:", proyecto.coowner); // Depuración
+            } else {
+                console.log("No se encontraron co-owners para este proyecto."); // Depuración
+            }
+
+            let techListHtml = '';
+            if (detalles.tech && Array.isArray(detalles.tech)) {
+                techListHtml = detalles.tech.map(tech => `<li>${tech.name}</li>`).join('');
+            } else {
+                console.log("No se encontraron tecnologías para este proyecto."); // Depuración
+            }
+
+            let linksListHtml = '';
+            if (detalles.links && Array.isArray(detalles.links)) {
+                linksListHtml = detalles.links.map(link => `<a class="list-group-item list-group-item-action" href="${link.url}">${link.name}</a>`).join('');
+            } else {
+                console.log("No se encontraron links para este proyecto."); // Depuración
             }
 
             let modalHtml = `
@@ -58,11 +84,11 @@ $(document).ready(function() {
                                         <p>${detalles.description}</p>
                                         <h6>Tech Used:</h6>
                                         <ul>
-                                            ${detalles.tech.map(tech => `<li>${tech.name}</li>`).join('')}
+                                            ${techListHtml}
                                         </ul>
                                         <h6>Links:</h6>
                                         <ul class="list-group list-group-flush">
-                                            ${detalles.links.map(link => `<a class="list-group-item list-group-item-action" href="${link.url}">${link.name}</a>`).join('')}
+                                            ${linksListHtml}
                                         </ul>
                                     </div>
                                 </div>
@@ -76,6 +102,8 @@ $(document).ready(function() {
             $('#proyectoModal').on('hidden.bs.modal', function (e) {
                 $('#proyectoModal').remove();
             });
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            console.error("Error al cargar el archivo JSON:", textStatus, errorThrown);
         });
     });
 });

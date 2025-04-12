@@ -25,3 +25,8 @@ img.home_image {
     height: auto;
     border-radius: 100px !important;
 }
+
+a.coownerLink {
+    text-decoration: none;
+    font-weight: 500;
+}
