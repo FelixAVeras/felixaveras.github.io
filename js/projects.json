@@ -2,12 +2,12 @@
     {
       "title": "Personal Money",
       "short_description": "Mobile app for personal expense tracker",
-      "image": "../img/personalmoney.png",
+      "image": "https://felixaveras.github.io/img/personalmoney.png",
       "details": [
         {
             "title": "Personal Money",
             "description": "Mobile app for personal expense tracker. You can register all your incomes and expense and the app organize for you by date, and show you how much do you expend or gain, help with savings methods and much more..",
-            "image": "../img/personalmoney.png",
+            "image": "https://felixaveras.github.io/img/personalmoney.png",
             "tech": [
                 { "name": "Flutter" },
                 { "name": "SQLite" },
@@ -24,12 +24,12 @@
     {
       "title": "GoodMarket List",
       "short_description": "Mobile app for supermarket shopping and compare prices. Share lists.",
-      "image": "../img/personalmoney.png",
+      "image": "https://felixaveras.github.io/img/personalmoney.png",
       "details": [
         {
             "title": "GoodMarket List",
             "description": "Mobile app for supermarket shopping and compare prices, share lists, find lowest prices and much more..",
-            "image": "../img/personalmoney.png",
+            "image": "https://felixaveras.github.io/img/personalmoney.png",
             "tech": [
                 { "name": "Flutter" },
                 { "name": "SQLite" },
