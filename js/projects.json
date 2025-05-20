@@ -38,7 +38,7 @@
             ],
             "links": [
                 { "name": "Android", "url": "https://play.google.com/store/apps/details?id=com.felixdev.goodmarketlist" },
-                { "name": "Web", "url": "" }
+                { "name": "Web", "url": "https://felixaveras.github.io/gm_website/" }
             ]
         }
       ]
