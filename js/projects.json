@@ -199,23 +199,19 @@
       ]
     },
     {
-      "title": "Accouting System for Coop CMD",
+      "title": "Fiancial App for Coop CMD",
       "short_description": "Financial web and mobile app",
       "image": "",
       "details": [
         {
-            "title": "Accouting System for Coop CMD",
+            "title": "Fiancial App for Coop CMD",
             "description": "Financial web and mobile app",
             "image": "",
             "tech": [
-                { "name": "Angular" },
-                { "name": ".NET" },
-                { "name": "SQL" },
-                { "name": "Azure" },
                 { "name": "Flutter" }
             ],
             "links": [
-                { "name": "Web", "url": "https://www.coopcmd.com/" }
+                { "name": "Android", "url": "https://play.google.com/store/apps/details?id=com.felixdev.coopcmdapp" }
             ]
         }
       ],
