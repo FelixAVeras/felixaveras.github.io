@@ -181,3 +181,7 @@ a:active { color: #9C27B0; }
 /*************************************/
 
 .socialbtns a { margin-right: 10px; }
+
+/* div.container-fluid.p-0 {
+  margin-left: 25px !important;
+} */
