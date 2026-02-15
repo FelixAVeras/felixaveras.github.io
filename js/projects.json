@@ -63,5 +63,25 @@
       "coowner": [
           { "name": "Isargenys Contreras", "url": "https://isargenys.github.io/" }
       ]
+    },
+    {
+      "title": "InQ",
+      "short_description": "Appointment and reservation management system",
+      "image": "https://felixaveras.github.io/img/gemini_inq.png",
+      "details": [
+        {
+            "title": "InQ",
+            "description": "Appointment and reservation management system",
+            "image": "https://felixaveras.github.io/img/gemini_inq.png",
+            "tech": [
+                { "name": "Angular" },
+                { "name": "ExpressJS" },
+                { "name": "Supabase" }
+            ],
+            "links": [
+                { "name": "Web", "url": "https://felixaveras.github.io/inqweb/" }
+            ]
+        }
+      ]
     }
   ]
