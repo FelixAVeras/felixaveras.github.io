@@ -15,6 +15,7 @@
                 { "name": "Laravel" }
             ],
             "links": [
+                { "name": "Web", "url": "https://felixaveras.github.io/PersonalMoney/" },
                 { "name": "Android", "url": "https://play.google.com/store/apps/details?id=com.felixdev.personalmoney" },
                 { "name": "Huawei", "url": "https://appgallery.huawei.com/app/C104790063" }
             ]
