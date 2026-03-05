@@ -1,12 +1,7 @@
 body { 
     /* background-image: linear-gradient(to bottom right, #fff , #6b6bf1);  */
     background-color: #f3f3f3;
-    padding-top: 35px;
-}
-
-ul.list-group.list-group-flush li.list-group-item:hover {
-    color: #3333cc;
-    font-weight: 600;
+    padding-top: 15px;
 }
 
 div.card.text-bg-dark img.card-img {
@@ -30,3 +25,5 @@ a.coownerLink {
     text-decoration: none;
     font-weight: 500;
 }
+
+ul.custom-list { list-style: none; }

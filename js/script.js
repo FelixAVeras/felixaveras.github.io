@@ -6,18 +6,24 @@ $(document).ready(function() {
         $.each(data, function(index, proyecto) {
             // Crear una nueva fila cada 3 proyectos
             if (index % 3 === 0) {
-                filaActual = $('<div class="row mb-3"></div>');
+                filaActual = $('<div class="row"></div>');
                 proyectosContainer.append(filaActual);
             }
             // Crear la columna y la tarjeta del proyecto
-            let columna = $('<div class="col-12 col-md-4 mb-3"></div>');
+            let columna = $('<div class="col-12 col-md-12 mb-3"></div>');
             let cardHtml = `
-                <div class="card w-100 h-100">
-                    <img src="${proyecto.image}" class="img-fluid rounded" alt="${proyecto.title}">
-                    <div class="card-body">
-                        <h5 class="card-title">${proyecto.title}</h5>
-                        <p class="card-text">${proyecto.short_description}</p>
-                        <button class="btn btn-primary ver-detalle" data-index="${index}">View Details</button>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                        <img src="${proyecto.image}" class="img-fluid rounded-start" alt="${proyecto.title}">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">${proyecto.title}</h5>
+                            <p class="card-text">${proyecto.short_description}</p>
+                            <button class="btn btn-link ver-detalle card-link" data-index="${index}">View Details</button>
+                        </div>
+                        </div>
                     </div>
                 </div>
             `;
