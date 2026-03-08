@@ -34,13 +34,10 @@ $(document).ready(function() {
 
     $(document).on('click', '.ver-detalle', function() {
         let index = $(this).data('index');
-        console.log("Índice del proyecto:", index); // Depuración
 
         $.getJSON("https://felixaveras.github.io/js/projects.json", function(data) {
             let proyecto = data[index];
             let detalles = proyecto.details[0];
-
-            console.log("Detalles del proyecto:", detalles); // Depuración
 
             if (!detalles) {
                 console.error("No se encontraron detalles para este proyecto.");

@@ -52,12 +52,10 @@
         {
             "title": "Ratataskr",
             "description": "Easy, efficient and collaborative To-Do List",
-            "image": "",
+            "image": "https://play-lh.googleusercontent.com/IwBf3Lgxd5hhRznHsaGRj7rz6jV2955dDmk7B4QY2XTnzLIi-PCud4FPrlqTcT0JtPvol4ZfMmZkRgZ5yklKEw=w480-h960-rw",
             "tech": [
                 { "name": "Flutter" },
-                { "name": "SQLite" },
-                { "name": "NodeJS" },
-                { "name": "Redis" }
+                { "name": "SQLite" }
             ],
             "links": [
                 { "name": "Android", "url": "https://play.google.com/store/apps/details?id=com.felixdev.ratataskrapp" }
