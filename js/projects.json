@@ -16,8 +16,8 @@
             ],
             "links": [
                 { "name": "Web", "url": "https://felixaveras.github.io/PersonalMoney/" },
-                { "name": "Android", "url": "https://play.google.com/store/apps/details?id=com.felixdev.personalmoney" },
-                { "name": "Huawei", "url": "https://appgallery.huawei.com/app/C104790063" }
+                { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.personalmoney" },
+                { "name": "AppGallery (Huawei)", "url": "https://appgallery.huawei.com/app/C104790063" }
             ]
         }
       ]
@@ -38,7 +38,7 @@
                 { "name": "Laravel" }
             ],
             "links": [
-                { "name": "Android", "url": "https://play.google.com/store/apps/details?id=com.felixdev.goodmarketlist" },
+                { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.goodmarketlist" },
                 { "name": "Web", "url": "https://felixaveras.github.io/gm_website/" }
             ]
         }
@@ -58,7 +58,7 @@
                 { "name": "SQLite" }
             ],
             "links": [
-                { "name": "Android", "url": "https://play.google.com/store/apps/details?id=com.felixdev.ratataskrapp" }
+                { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.ratataskrapp" }
             ]
         }
       ]
