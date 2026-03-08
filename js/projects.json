@@ -45,24 +45,24 @@
       ]
     },
     {
-      "title": "Fiancial App for Coop CMD",
-      "short_description": "Financial web and mobile app",
-      "image": "https://play-lh.googleusercontent.com/hDuU5ptRZ0KiBFNl4goNeZptRMCUnV_mRmjvOqtWv08sF6icc-XYd3h-5zuooHU9DQ=w416-h235-rw",
+      "title": "Ratataskr",
+      "short_description": "Easy, efficient and collaborative To-Do List",
+      "image": "https://play-lh.googleusercontent.com/IwBf3Lgxd5hhRznHsaGRj7rz6jV2955dDmk7B4QY2XTnzLIi-PCud4FPrlqTcT0JtPvol4ZfMmZkRgZ5yklKEw=w480-h960-rw",
       "details": [
         {
-            "title": "Fiancial App for Coop CMD",
-            "description": "Financial web and mobile app",
+            "title": "Ratataskr",
+            "description": "Easy, efficient and collaborative To-Do List",
             "image": "",
             "tech": [
-                { "name": "Flutter" }
+                { "name": "Flutter" },
+                { "name": "SQLite" },
+                { "name": "NodeJS" },
+                { "name": "Redis" }
             ],
             "links": [
-                { "name": "Android", "url": "https://play.google.com/store/apps/details?id=com.felixdev.coopcmdapp" }
+                { "name": "Android", "url": "https://play.google.com/store/apps/details?id=com.felixdev.ratataskrapp" }
             ]
         }
-      ],
-      "coowner": [
-          { "name": "Isargenys Contreras", "url": "https://isargenys.github.io/" }
       ]
     },
     {
