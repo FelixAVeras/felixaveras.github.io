@@ -1,231 +1,274 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Felix Ant. Veras - Senior FullStack Developer</title>
+    
+    <title>Felix Veras | Senior FullStack Engineer & QA Solutions Architect</title>
+    <meta name="description" content="Senior FullStack Developer and QA Automation specialist with 10+ years of experience. Expert in building high-performance applications with Angular, Flutter, and AWS.">
+    <meta name="keywords" content="Senior FullStack Developer, QA Automation, Angular v18, Flutter, AWS, Cypress, Software Architecture, Dominican Republic">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
         :root {
-            --accent: #0dcaf0; /* Cyan info */
-            --bg-body: #0d1117;
-            --card-border: #30363d;
+            --primary: #16697a;    /* Petróleo profundo */
+            --secondary: #489fb5;  /* Azul medio */
+            --accent: #ffa62b;     /* Naranja fresco */
+            --bg-off-white: #ede7e3; /* Crema suave */
+            --dark: #0f172a;
+            --white: #ffffff;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-body);
-            color: #c9d1d9;
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--bg-off-white);
+            color: var(--dark);
+            overflow-x: hidden;
             line-height: 1.6;
         }
 
-        .text-gradient {
-            background: linear-gradient(90deg, #0dcaf0, #4facfe);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* Sidebar Glassmorphism */
-        .profile-card {
-            background: #161b22;
-            border: 1px solid var(--card-border);
-            border-radius: 20px;
-            position: sticky;
-            top: 2rem;
-        }
-
-        .img-profile {
-            border: 3px solid var(--accent);
-            padding: 5px;
-            transition: transform 0.3s ease;
-        }
-
-        .img-profile:hover { transform: scale(1.02); }
-
-        /* Timeline de Experiencia */
-        .work-item {
-            border-left: 2px solid var(--card-border);
-            padding-left: 1.5rem;
-            position: relative;
-            padding-bottom: 2rem;
-        }
-
-        .work-item::before {
-            content: "";
-            position: absolute;
-            left: -9px;
-            top: 0;
-            width: 16px;
-            height: 16px;
-            background: var(--accent);
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(13, 202, 240, 0.5);
-        }
-
-        .progress { background-color: #21262d; border-radius: 10px; overflow: hidden; }
-        .progress-bar { background: linear-gradient(90deg, #0dcaf0, #007bff); }
-
-        .card-section {
-            background: #161b22;
-            border: 1px solid var(--card-border);
-            border-radius: 16px;
-            margin-bottom: 1.5rem;
-        }
-
-        .social-btn {
-            width: 45px;
-            height: 45px;
-            display: inline-flex;
+        /* Hero Section */
+        .hero-split {
+            min-height: 90vh;
+            display: flex;
             align-items: center;
-            justify-content: center;
-            border-radius: 12px;
-            background: #21262d;
-            color: var(--accent);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 1px solid var(--card-border);
+            padding-top: 80px;
         }
 
-        .social-btn:hover {
+        .hero-tag {
+            background: var(--primary);
+            color: var(--white);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        h1.display-1 {
+            font-weight: 700;
+            letter-spacing: -3px;
+            line-height: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .btn-cta {
             background: var(--accent);
-            color: #000;
-            transform: translateY(-3px);
+            color: var(--white);
+            padding: 18px 45px;
+            border-radius: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: none;
         }
 
-        h2, h4 { color: #f0f6fc; font-weight: 700; }
+        .btn-cta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(255, 166, 43, 0.2);
+            color: var(--white);
+        }
+
+        /* Experience Section */
+        .experience-box {
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 60px;
+            padding: 100px 0;
+            margin: 60px 0;
+        }
+
+        .job-card {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 40px 0;
+            transition: all 0.3s ease;
+        }
+
+        .job-card:hover {
+            padding-left: 20px;
+            color: var(--accent);
+        }
+
+        .job-card h4 { font-weight: 700; }
+
+        /* Project Cards (Bento-inspired Grid) */
+        .project-flat-card {
+            background: var(--white);
+            border-radius: 35px;
+            border: none;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            height: 100%;
+        }
+
+        .project-flat-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 60px rgba(22, 105, 122, 0.12);
+        }
+
+        .project-img-wrapper {
+            height: 240px;
+            overflow: hidden;
+            background: var(--bg-off-white);
+        }
+
+        .project-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .project-flat-card:hover .project-img-wrapper img {
+            transform: scale(1.1);
+        }
+
+        /* Utils */
+        .text-secondary-custom { color: var(--secondary) !important; }
+        .profile-img {
+            width: 320px;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 100px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
 
-<div class="container py-5">
-    <div class="row g-4">
-        
-        <aside class="col-lg-4">
-            <div class="profile-card p-4 text-center">
-                <img src="./img/profile_3.jpg" class="rounded-circle img-fluid img-profile mb-4" alt="Felix Veras" style="width: 180px; height: 180px; object-fit: cover;">
-                
-                <h2 class="h3 mb-1">Felix Ant. Veras</h2>
-                <p class="text-info mb-4 fw-600 text-uppercase small tracking-wider">Senior FullStack Developer</p>
-                
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                    <a href="https://linkedin.com/in/felix-ant-carvajal-veras-21811075/" class="social-btn" data-bs-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/FelixAVeras" class="social-btn" data-bs-toggle="tooltip" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://stackoverflow.com/users/7277951/felixaveras" class="social-btn" data-bs-toggle="tooltip" title="StackOverflow"><i class="fab fa-stack-overflow"></i></a>
-                    <a href="https://www.youtube.com/@felixaveras" class="social-btn" data-bs-toggle="tooltip" title="YouTube"><i class="fab fa-youtube"></i></a>
-                </div>
+    <nav class="container py-4" data-aos="fade-down">
+        <div class="d-flex justify-content-between align-items-center">
+            <span class="fw-bold fs-4 text-primary">FELIX.V</span>
+            <div class="d-flex gap-4">
+                <a href="https://linkedin.com/in/felix-ant-carvajal-veras-21811075/" class="text-dark" target="_blank"><i class="fab fa-linkedin fs-5"></i></a>
+                <a href="https://github.com/FelixAVeras" class="text-dark" target="_blank"><i class="fab fa-github fs-5"></i></a>
+            </div>
+        </div>
+    </nav>
 
-                <div class="text-start border-top border-secondary pt-4">
-                    <p class="small mb-3"><i class="fa-solid fa-house text-info me-2"></i> San Cristóbal, Dom. Rep.</p>
-                    <p class="small mb-3"><i class="fa-solid fa-envelope text-info me-2"></i> fcarvajal44@gmail.com</p>
-                    <hr class="opacity-25">
-                    
-                    <h5 class="h6 fw-bold mb-3"><i class="fa-solid fa-star text-warning me-2"></i> Core Skills</h5>
-                    
-                    <label class="small d-block mb-1">Web & Mobile (Flutter/Angular)</label>
-                    <div class="progress mb-3" style="height: 8px">
-                        <div class="progress-bar" style="width: 85%"></div>
-                    </div>
-
-                    <label class="small d-block mb-1">Testing & QA (Cypress/AWS)</label>
-                    <div class="progress mb-3" style="height: 8px">
-                        <div class="progress-bar" style="width: 75%"></div>
-                    </div>
-
-                    <label class="small d-block mb-1">DevOps & Cloud</label>
-                    <div class="progress mb-4" style="height: 8px">
-                        <div class="progress-bar" style="width: 50%"></div>
-                    </div>
-
-                    <h5 class="h6 fw-bold mb-3"><i class="fa-solid fa-language text-info me-2"></i> Languages</h5>
-                    <div class="d-flex gap-2 flex-wrap">
-                        <span class="badge bg-dark border border-secondary p-2">Español (Nativo)</span>
-                        <span class="badge bg-dark border border-secondary p-2">English (70%)</span>
-                        <span class="badge bg-dark border border-secondary p-2">Portuguese (25%)</span>
-                    </div>
+    <header class="hero-split container">
+        <div class="row align-items-center">
+            <div class="col-lg-7" data-aos="fade-right" data-aos-delay="200">
+                <span class="hero-tag">Based in San Cristóbal, DR</span>
+                <h1 class="display-1">Senior FullStack<br><span class="text-secondary-custom">Developer.</span></h1>
+                <p class="lead fs-4 mb-5 opacity-75">
+                    Architecting high-performance digital ecosystems with 10+ years of expertise in <strong>Angular, Flutter, and AWS</strong>. Focused on scalability and technical excellence.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="mailto:fcarvajal44@gmail.com" class="btn-cta">Get in Touch</a>
                 </div>
             </div>
-        </aside>
+            <div class="col-lg-5 text-center mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="400">
+                <img src="./img/profile_3.jpg" class="profile-img" alt="Felix Veras">
+            </div>
+        </div>
+    </header>
 
-        <main class="col-lg-8">
+    <section class="experience-box" data-aos="fade-up">
+        <div class="container">
+            <h2 class="display-4 fw-bold mb-5" data-aos="fade-right">Professional Journey</h2>
             
-            <section class="card-section p-4 mb-4">
-                <h1 class="display-5 fw-bold mb-3">Software <span class="text-gradient">Innovation</span></h1>
-                <p class="lead text-secondary">
-                    Passionate about building efficient, scalable, and user-focused digital solutions. I turn ideas into real products — from mobile apps to web platforms and administrative systems.
-                </p>
-            </section>
-
-            <section class="card-section p-4">
-                <h3 class="mb-5"><i class="fa-solid fa-briefcase text-info me-2"></i> Profesional Experience</h3>
-                
-                <div class="work-item">
-                    <div class="d-flex justify-content-between align-items-start flex-wrap">
-                        <h5 class="fw-bold mb-1 text-white">QA Automation Engineer — Banco BHD</h5>
-                        <span class="badge bg-info text-dark">August 2025 - CURRENT</span>
+            <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="row align-items-center">
+                    <div class="col-md-3 opacity-50 fw-bold">AUG 2025 - PRESENT</div>
+                    <div class="col-md-6">
+                        <h4 class="m-0">QA Automation Engineer</h4>
+                        <p class="m-0 text-secondary-custom fw-medium">Banco BHD</p>
                     </div>
-                    <p class="text-secondary mb-2">Test the entire infrastructure and systems using Cypress, AWS, and Bruno for web and mobile user platforms.</p>
+                    <div class="col-md-3 text-md-end small fw-bold">CYPRESS • AWS • BRUNO</div>
                 </div>
+            </div>
 
-                <div class="work-item">
-                    <h5 class="fw-bold mb-1 text-white">Lead Frontend Developer — Bingo</h5>
-                    <p class="text-info small mb-2">Feb 2025 - Jul 2025</p>
-                    <p class="text-secondary">Client side development using Angular v18 to get data from API Backend.</p>
+            <div class="job-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="row align-items-center">
+                    <div class="col-md-3 opacity-50 fw-bold">FEB 2025 - JUL 2025</div>
+                    <div class="col-md-6">
+                        <h4 class="m-0">Lead Frontend Developer</h4>
+                        <p class="m-0 text-secondary-custom fw-medium">Bingo</p>
+                    </div>
+                    <div class="col-md-3 text-md-end small fw-bold">ANGULAR V18 • API ARCHITECTURE</div>
                 </div>
+            </div>
 
-                <div class="work-item">
-                    <h5 class="fw-bold mb-1 text-white">Senior Business Central Implementator — DEXTRA</h5>
-                    <p class="text-info small mb-2">Oct 2024 - Feb 2025</p>
-                    <p class="text-secondary">Develop or improve new features using AL Programming language for existing and new customers.</p>
+            <div class="job-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="row align-items-center">
+                    <div class="col-md-3 opacity-50 fw-bold">OCT 2024 - FEB 2025</div>
+                    <div class="col-md-6">
+                        <h4 class="m-0">Senior Business Central Implementator</h4>
+                        <p class="m-0 text-secondary-custom fw-medium">DEXTRA</p>
+                    </div>
+                    <div class="col-md-3 text-md-end small fw-bold">AL LANGUAGE • ERP SYSTEMS</div>
                 </div>
+            </div>
 
-                <div class="work-item">
-                    <h5 class="fw-bold mb-1 text-white">Senior FullStack Developer — Smart Testing / Loteka</h5>
-                    <p class="text-info small mb-2">Mar 2022 - Jul 2023</p>
-                    <p class="text-secondary">Improve new features to existing admin platform using Angular, Python and AWS EB.</p>
+            <div class="job-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="row align-items-center">
+                    <div class="col-md-3 opacity-50 fw-bold">MAR 2022 - JUL 2023</div>
+                    <div class="col-md-6">
+                        <h4 class="m-0">Senior FullStack Developer</h4>
+                        <p class="m-0 text-secondary-custom fw-medium">Smart Testing / Loteka</p>
+                    </div>
+                    <div class="col-md-3 text-md-end small fw-bold">ANGULAR • PYTHON • AWS EB</div>
                 </div>
+            </div>
 
-                <div class="work-item">
-                    <h5 class="fw-bold mb-1 text-white">Senior Frontend Developer — Codemera / Min. Trabajo</h5>
-                    <p class="text-info small mb-2">Mar 2022 - Nov 2023</p>
-                    <p class="text-secondary">Development of Virtual Office for Ministerio de Trabajo de Republica Dominicana using Angular.</p>
+            <div class="job-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="row align-items-center">
+                    <div class="col-md-3 opacity-50 fw-bold">MAR 2022 - NOV 2023</div>
+                    <div class="col-md-6">
+                        <h4 class="m-0">Senior Frontend Developer</h4>
+                        <p class="m-0 text-secondary-custom fw-medium">Codemera / Min. Trabajo</p>
+                    </div>
+                    <div class="col-md-3 text-md-end small fw-bold">ANGULAR • GOV-TECH</div>
                 </div>
+            </div>
 
-                <div class="work-item">
-                    <h5 class="fw-bold mb-1 text-white">Senior FullStack Developer — Tredium</h5>
-                    <p class="text-info small mb-2">Mar 2022 - Sept 2023</p>
-                    <p class="text-secondary">Development of health insurance admin platforms using ReactJS and GO.</p>
+            <div class="job-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="row align-items-center">
+                    <div class="col-md-3 opacity-50 fw-bold">MAR 2022 - SEP 2023</div>
+                    <div class="col-md-6">
+                        <h4 class="m-0">Senior FullStack Developer</h4>
+                        <p class="m-0 text-secondary-custom fw-medium">Tredium</p>
+                    </div>
+                    <div class="col-md-3 text-md-end small fw-bold">REACTJS • GO • HEALTH-TECH</div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <section class="card-section p-4 mt-4">
-                <h3 class="mb-2"><i class="fa-solid fa-list-check text-info me-2"></i> Featured Projects</h3>
-                <p class="text-muted mb-4">Self-taught projects based on 10+ years of experience.</p>
-                <hr class="border-secondary opacity-25">
-                <div id="project-card" class="row g-3"></div>
-            </section>
+    <section class="container py-5">
+        <div class="d-flex justify-content-between align-items-end mb-5" data-aos="fade-right">
+            <div>
+                <h2 class="display-5 fw-bold m-0">Selected Works</h2>
+                <p class="text-muted">A collection of technical solutions built with precision.</p>
+            </div>
+        </div>
+        
+        <div id="project-card" class="row g-4">
+            </div>
+    </section>
 
-        </main>
-    </div>
-</div>
+    <footer class="container py-5 mt-5 border-top text-center">
+        <p class="text-muted small">© 2026 Felix Veras • Built with Bootstrap 5 & Modern Flat Design Principles.</p>
+    </footer>
 
-<footer class="py-5 text-center opacity-50">
-    <p class="small">© 2026 Felix Veras | Built with Bootstrap 5.3</p>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./js/custom.js"></script>
-<script src="js/script.js"></script>
-
-<script>
-    // Inicializar tooltips
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-</script>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
