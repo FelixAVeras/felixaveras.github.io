@@ -17,7 +17,8 @@
             "links": [
                 { "name": "Web", "url": "https://felixaveras.github.io/PersonalMoney/" },
                 { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.personalmoney" },
-                { "name": "AppGallery (Huawei)", "url": "https://appgallery.huawei.com/app/C104790063" }
+                { "name": "AppGallery (Huawei/HarmonyOS)", "url": "https://appgallery.huawei.com/app/C104790063" },
+                { "name": "AppStore (iOS) - comming soon", "url": "" },
             ]
         }
       ]
@@ -38,8 +39,10 @@
                 { "name": "Laravel" }
             ],
             "links": [
+                { "name": "Web", "url": "https://good-market-info.vercel.app/" },
                 { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.goodmarketlist" },
-                { "name": "Web", "url": "https://felixaveras.github.io/gm_website/" }
+                { "name": "AppStore (iOS) - comming soon", "url": "" },
+                { "name": "AppGallery (Huawei/HarmonyOS) - comming soon", "url": "" },
             ]
         }
       ]
@@ -58,7 +61,9 @@
                 { "name": "SQLite" }
             ],
             "links": [
-                { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.ratataskrapp" }
+                { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.ratataskrapp" },
+                { "name": "AppStore (iOS) - comming soon", "url": "" },
+                { "name": "AppGallery (Huawei/HarmonyOS) - comming soon", "url": "" },
             ]
         }
       ]
@@ -82,5 +87,27 @@
             ]
         }
       ]
-    }
+    },
+    {
+      "title": "DailyMeal",
+      "short_description": "Your daily food journal — log meals & get AI nutrition insights.",
+      "image": "https://play-lh.googleusercontent.com/MT1L8M-o_IpGtliMn_R466fHMTddVgOi3lC19Hk0lH7vSZrjHGUzYVkYEIJaTUdDIPDPShTFjAU2TfmkC1YZqg=w240-h480-rw",
+      "details": [
+        {
+            "title": "Ratataskr",
+            "description": "Your daily food journal — log meals & get AI nutrition insights.",
+            "image": "https://play-lh.googleusercontent.com/IwBf3Lgxd5hhRznHsaGRj7rz6jV2955dDmk7B4QY2XTnzLIi-PCud4FPrlqTcT0JtPvol4ZfMmZkRgZ5yklKEw=w480-h960-rw",
+            "tech": [
+                { "name": "Flutter" },
+                { "name": "SQLite" },
+                { "name": "Anthropic AI and Third party Food API Info" },
+            ],
+            "links": [
+                { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.dailymeal" },
+                { "name": "AppStore (iOS) - comming soon", "url": "" },
+                { "name": "AppGallery (Huawei/HarmonyOS) - comming soon", "url": "" },
+            ]
+        }
+      ]
+    },
   ]
