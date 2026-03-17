@@ -1,34 +1,26 @@
 $(document).ready(function() {
     $.getJSON("https://felixaveras.github.io/js/projects.json", function(data) {
         let proyectosContainer = $("#project-card");
-        let filaActual;
-
+        
         $.each(data, function(index, proyecto) {
-            // Crear una nueva fila cada 3 proyectos
-            if (index % 3 === 0) {
-                filaActual = $('<div class="row"></div>');
-                proyectosContainer.append(filaActual);
-            }
-            // Crear la columna y la tarjeta del proyecto
-            let columna = $('<div class="col-12 col-md-12 mb-3"></div>');
+            // Layout moderno: Tarjetas verticales con efecto hover elegante
             let cardHtml = `
-                <div class="card">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                        <img src="${proyecto.image}" class="img-fluid rounded-start" alt="${proyecto.title}">
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="${index * 100}">
+                    <div class="project-flat-card shadow-sm">
+                        <div class="project-img-wrapper">
+                            <img src="${proyecto.image}" alt="${proyecto.title}">
                         </div>
-                        <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">${proyecto.title}</h5>
-                            <p class="card-text">${proyecto.short_description}</p>
-                            <button class="btn btn-link ver-detalle card-link" data-index="${index}">View Details</button>
-                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-2">${proyecto.title}</h5>
+                            <p class="text-muted small mb-4">${proyecto.short_description}</p>
+                            <button class="btn btn-outline-primary rounded-pill px-4 ver-detalle" data-index="${index}">
+                                Explore Details
+                            </button>
                         </div>
                     </div>
                 </div>
             `;
-            columna.append(cardHtml);
-            filaActual.append(columna);
+            proyectosContainer.append(cardHtml);
         });
     });
 
@@ -39,60 +31,34 @@ $(document).ready(function() {
             let proyecto = data[index];
             let detalles = proyecto.details[0];
 
-            if (!detalles) {
-                console.error("No se encontraron detalles para este proyecto.");
-                return;
-            }
+            if (!detalles) return;
 
-            let coownerHtml = '';
+            let techListHtml = (detalles.tech || []).map(tech => 
+                `<span class="badge bg-light text-primary border me-1 mb-1 p-2">${tech.name}</span>`
+            ).join('');
 
-            // Verificar si coowner existe en el objeto principal del proyecto
-            if (proyecto.coowner && Array.isArray(proyecto.coowner) && proyecto.coowner.length > 0) {
-                let coownerLinks = proyecto.coowner.map(coowner => `<a class="coownerLink" href="${coowner.url}">${coowner.name}</a>`).join('');
-                coownerHtml = `<p>Co-owner with ${coownerLinks}</p>`;
-                console.log("Co-owners encontrados:", proyecto.coowner); // Depuración
-            } else {
-                console.log("No se encontraron co-owners para este proyecto."); // Depuración
-            }
-
-            let techListHtml = '';
-            if (detalles.tech && Array.isArray(detalles.tech)) {
-                techListHtml = detalles.tech.map(tech => `<li>${tech.name}</li>`).join('');
-            } else {
-                console.log("No se encontraron tecnologías para este proyecto."); // Depuración
-            }
-
-            let linksListHtml = '';
-            if (detalles.links && Array.isArray(detalles.links)) {
-                linksListHtml = detalles.links.map(link => `<a class="list-group-item list-group-item-action" href="${link.url}">${link.name}</a>`).join('');
-            } else {
-                console.log("No se encontraron links para este proyecto."); // Depuración
-            }
+            let linksListHtml = (detalles.links || []).map(link => 
+                `<a class="btn btn-primary rounded-pill me-2 mb-2" href="${link.url}" target="_blank">${link.name}</a>`
+            ).join('');
 
             let modalHtml = `
-                <div class="modal fade" id="proyectoModal" tabindex="-1" aria-labelledby="proyectoModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="proyectoModalLabel">${detalles.title}</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                ${coownerHtml}
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <img src="${detalles.image}" class="img-fluid rounded" alt="${detalles.title}">
+                <div class="modal fade" id="proyectoModal" tabindex="-1">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content border-0" style="border-radius: 30px; overflow: hidden;">
+                            <div class="modal-body p-0">
+                                <div class="row g-0">
+                                    <div class="col-lg-5">
+                                        <img src="${detalles.image}" class="img-fluid h-100" style="object-fit: cover;" alt="${detalles.title}">
                                     </div>
-                                    <div class="col-12 col-md-6">
-                                        <p>${detalles.description}</p>
-                                        <h6>Tech Used:</h6>
-                                        <ul>
-                                            ${techListHtml}
-                                        </ul>
-                                        <h6>Links:</h6>
-                                        <ul class="list-group list-group-flush">
-                                            ${linksListHtml}
-                                        </ul>
+                                    <div class="col-lg-7 p-5">
+                                        <div class="d-flex justify-content-between align-items-start mb-4">
+                                            <h3 class="fw-bold m-0">${detalles.title}</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <p class="text-muted mb-4">${detalles.description}</p>
+                                        <h6 class="fw-bold small text-uppercase tracking-wider mb-3">Technologies</h6>
+                                        <div class="mb-4">${techListHtml}</div>
+                                        <div class="pt-3 border-top">${linksListHtml}</div>
                                     </div>
                                 </div>
                             </div>
@@ -102,11 +68,7 @@ $(document).ready(function() {
             `;
             $('body').append(modalHtml);
             $('#proyectoModal').modal('show');
-            $('#proyectoModal').on('hidden.bs.modal', function (e) {
-                $('#proyectoModal').remove();
-            });
-        }).fail(function(jqXHR, textStatus, errorThrown) {
-            console.error("Error al cargar el archivo JSON:", textStatus, errorThrown);
+            $('#proyectoModal').on('hidden.bs.modal', () => $('#proyectoModal').remove());
         });
     });
 });
