@@ -1,113 +1,113 @@
 [
-    {
-      "title": "Personal Money",
-      "short_description": "Mobile app for personal expense tracker",
-      "image": "https://felixaveras.github.io/img/personalmoney.png",
-      "details": [
-        {
-            "title": "Personal Money",
-            "description": "Mobile app for personal expense tracker. You can register all your incomes and expense and the app organize for you by date, and show you how much do you expend or gain, help with savings methods and much more..",
-            "image": "https://felixaveras.github.io/img/personalmoney.png",
-            "tech": [
-                { "name": "Flutter" },
-                { "name": "SQLite" },
-                { "name": "Heroku" },
-                { "name": "Laravel" }
-            ],
-            "links": [
-                { "name": "Web", "url": "https://felixaveras.github.io/PersonalMoney/" },
-                { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.personalmoney" },
-                { "name": "AppGallery (Huawei/HarmonyOS)", "url": "https://appgallery.huawei.com/app/C104790063" },
-                { "name": "AppStore (iOS) - comming soon", "url": "" },
-            ]
-        }
-      ]
-    },
-    {
-      "title": "GoodMarket List",
-      "short_description": "Mobile app for supermarket shopping and compare prices. Share lists.",
-      "image": "https://felixaveras.github.io/img/goodmarket2.png",
-      "details": [
-        {
-            "title": "GoodMarket List",
-            "description": "Mobile app for supermarket shopping and compare prices, share lists, find lowest prices and much more..",
-            "image": "https://felixaveras.github.io/img/goodmarket2.png",
-            "tech": [
-                { "name": "Flutter" },
-                { "name": "SQLite" },
-                { "name": "Supabase" },
-                { "name": "Laravel" }
-            ],
-            "links": [
-                { "name": "Web", "url": "https://good-market-info.vercel.app/" },
-                { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.goodmarketlist" },
-                { "name": "AppStore (iOS) - comming soon", "url": "" },
-                { "name": "AppGallery (Huawei/HarmonyOS) - comming soon", "url": "" },
-            ]
-        }
-      ]
-    },
-    {
-      "title": "Ratataskr",
-      "short_description": "Easy, efficient and collaborative To-Do List",
-      "image": "https://play-lh.googleusercontent.com/IwBf3Lgxd5hhRznHsaGRj7rz6jV2955dDmk7B4QY2XTnzLIi-PCud4FPrlqTcT0JtPvol4ZfMmZkRgZ5yklKEw=w480-h960-rw",
-      "details": [
-        {
-            "title": "Ratataskr",
-            "description": "Easy, efficient and collaborative To-Do List",
-            "image": "https://play-lh.googleusercontent.com/IwBf3Lgxd5hhRznHsaGRj7rz6jV2955dDmk7B4QY2XTnzLIi-PCud4FPrlqTcT0JtPvol4ZfMmZkRgZ5yklKEw=w480-h960-rw",
-            "tech": [
-                { "name": "Flutter" },
-                { "name": "SQLite" }
-            ],
-            "links": [
-                { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.ratataskrapp" },
-                { "name": "AppStore (iOS) - comming soon", "url": "" },
-                { "name": "AppGallery (Huawei/HarmonyOS) - comming soon", "url": "" },
-            ]
-        }
-      ]
-    },
-    {
-      "title": "InQ",
-      "short_description": "Appointment and reservation management system",
-      "image": "https://felixaveras.github.io/img/gemini_inq.png",
-      "details": [
-        {
-            "title": "InQ",
-            "description": "Appointment and reservation management system",
-            "image": "https://felixaveras.github.io/img/gemini_inq.png",
-            "tech": [
-                { "name": "Angular" },
-                { "name": "ExpressJS" },
-                { "name": "Supabase" }
-            ],
-            "links": [
-                { "name": "Web", "url": "https://felixaveras.github.io/inqweb/" }
-            ]
-        }
-      ]
-    },
-    {
-      "title": "DailyMeal",
-      "short_description": "Your daily food journal — log meals & get AI nutrition insights.",
-      "image": "https://play-lh.googleusercontent.com/MT1L8M-o_IpGtliMn_R466fHMTddVgOi3lC19Hk0lH7vSZrjHGUzYVkYEIJaTUdDIPDPShTFjAU2TfmkC1YZqg=w240-h480-rw",
-      "details": [
-        {
-            "title": "Ratataskr",
-            "description": "Your daily food journal — log meals & get AI nutrition insights.",
-            "image": "https://play-lh.googleusercontent.com/IwBf3Lgxd5hhRznHsaGRj7rz6jV2955dDmk7B4QY2XTnzLIi-PCud4FPrlqTcT0JtPvol4ZfMmZkRgZ5yklKEw=w480-h960-rw",
-            "tech": [
-                { "name": "Flutter" },
-                { "name": "SQLite" },
-                { "name": "Anthropic AI and Third party Food API Info" },
-            ],
-            "links": [
-                { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.dailymeal" },
-                { "name": "AppStore (iOS) - comming soon", "url": "" },
-                { "name": "AppGallery (Huawei/HarmonyOS) - comming soon", "url": "" },
-            ]
-        }
-      ]
-    },
-  ]
+  {
+    "title": "Personal Money",
+    "short_description": "Mobile app for personal expense tracker",
+    "image": "https://felixaveras.github.io/img/personalmoney.png",
+    "details": [
+      {
+        "title": "Personal Money",
+        "description": "Mobile app for personal expense tracker. You can register all your incomes and expense and the app organize for you by date, and show you how much do you expend or gain, help with savings methods and much more..",
+        "image": "https://felixaveras.github.io/img/personalmoney.png",
+        "tech": [
+          { "name": "Flutter" },
+          { "name": "SQLite" },
+          { "name": "Heroku" },
+          { "name": "Laravel" }
+        ],
+        "links": [
+          { "name": "Web", "url": "https://felixaveras.github.io/PersonalMoney/" },
+          { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.personalmoney" },
+          { "name": "AppGallery (Huawei/HarmonyOS)", "url": "https://appgallery.huawei.com/app/C104790063" },
+          { "name": "AppStore (iOS) - comming soon", "url": "" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "GoodMarket List",
+    "short_description": "Mobile app for supermarket shopping and compare prices. Share lists.",
+    "image": "https://felixaveras.github.io/img/goodmarket2.png",
+    "details": [
+      {
+        "title": "GoodMarket List",
+        "description": "Mobile app for supermarket shopping and compare prices, share lists, find lowest prices and much more..",
+        "image": "https://felixaveras.github.io/img/goodmarket2.png",
+        "tech": [
+          { "name": "Flutter" },
+          { "name": "SQLite" },
+          { "name": "Supabase" },
+          { "name": "Laravel" }
+        ],
+        "links": [
+          { "name": "Web", "url": "https://good-market-info.vercel.app/" },
+          { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.goodmarketlist" },
+          { "name": "AppStore (iOS) - comming soon", "url": "" },
+          { "name": "AppGallery (Huawei/HarmonyOS) - comming soon", "url": "" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Ratataskr",
+    "short_description": "Easy, efficient and collaborative To-Do List",
+    "image": "https://play-lh.googleusercontent.com/IwBf3Lgxd5hhRznHsaGRj7rz6jV2955dDmk7B4QY2XTnzLIi-PCud4FPrlqTcT0JtPvol4ZfMmZkRgZ5yklKEw=w480-h960-rw",
+    "details": [
+      {
+        "title": "Ratataskr",
+        "description": "Easy, efficient and collaborative To-Do List",
+        "image": "https://play-lh.googleusercontent.com/IwBf3Lgxd5hhRznHsaGRj7rz6jV2955dDmk7B4QY2XTnzLIi-PCud4FPrlqTcT0JtPvol4ZfMmZkRgZ5yklKEw=w480-h960-rw",
+        "tech": [
+          { "name": "Flutter" },
+          { "name": "SQLite" }
+        ],
+        "links": [
+          { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.ratataskrapp" },
+          { "name": "AppStore (iOS) - comming soon", "url": "" },
+          { "name": "AppGallery (Huawei/HarmonyOS) - comming soon", "url": "" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "InQ",
+    "short_description": "Appointment and reservation management system",
+    "image": "https://felixaveras.github.io/img/gemini_inq.png",
+    "details": [
+      {
+        "title": "InQ",
+        "description": "Appointment and reservation management system",
+        "image": "https://felixaveras.github.io/img/gemini_inq.png",
+        "tech": [
+          { "name": "Angular" },
+          { "name": "ExpressJS" },
+          { "name": "Supabase" }
+        ],
+        "links": [
+          { "name": "Web", "url": "https://felixaveras.github.io/inqweb/" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "DailyMeal",
+    "short_description": "Your daily food journal — log meals & get AI nutrition insights.",
+    "image": "https://play-lh.googleusercontent.com/MT1L8M-o_IpGtliMn_R466fHMTddVgOi3lC19Hk0lH7vSZrjHGUzYVkYEIJaTUdDIPDPShTFjAU2TfmkC1YZqg=w240-h480-rw",
+    "details": [
+      {
+        "title": "DailyMeal",
+        "description": "Your daily food journal — log meals & get AI nutrition insights.",
+        "image": "https://play-lh.googleusercontent.com/MT1L8M-o_IpGtliMn_R466fHMTddVgOi3lC19Hk0lH7vSZrjHGUzYVkYEIJaTUdDIPDPShTFjAU2TfmkC1YZqg=w240-h480-rw",
+        "tech": [
+          { "name": "Flutter" },
+          { "name": "SQLite" },
+          { "name": "Anthropic AI and Third party Food API Info" }
+        ],
+        "links": [
+          { "name": "PlayStore (Android)", "url": "https://play.google.com/store/apps/details?id=com.felixdev.dailymeal" },
+          { "name": "AppStore (iOS) - comming soon", "url": "" },
+          { "name": "AppGallery (Huawei/HarmonyOS) - comming soon", "url": "" }
+        ]
+      }
+    ]
+  }
+]
